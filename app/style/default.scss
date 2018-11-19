@@ -1,0 +1,25 @@
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button, input{
+  &:focus, &:active{
+    outline: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover, &:focus, &:active{
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,306 @@
+
+/* Large Devices, Wide Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1114px !important;
+    max-width: 1114px !important;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  h1{
+    padding-left: 50px;
+  }
+  .show-type-wrapper{
+    padding: 0 18px;
+  }
+  .reviews{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .customers{
+    padding: 50px;
+  }
+  footer .column{
+    padding-left: 50px;
+  }
+  .left-panel{
+    margin-left: 15px;
+  }
+  .right-panel{
+    margin-right: 15px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  body{
+    background-size: 1440px 700px !important;
+    .primary-button{
+      width: 270px !important;
+    }
+    .container{
+      header{
+        h1{
+          padding-left: 50px;
+          font-size: 80px;
+          .sub-tittle{
+            font-size: 30px;
+            margin-top: 10px;
+          }
+        }
+        .feedback-top{
+          height: 200px;
+          .left-panel{
+            padding-left: 40px;
+            .feedback-text{
+              font-size: 30px;
+            }
+          }
+          .right-panel{
+            padding: 0 10px 0 30px;
+            .form-container .submit-btn button{
+              width: 60px;
+            }
+          }
+        }
+      }
+      .varieties .varieties-list .varieties-item .text{
+        font-size: 17px;
+      }
+      .show-type {
+        .slider .slider-item {
+          height: 550px;
+        }
+        .show-type-content {
+          padding: 30px 10px 20px 50px;
+          .show-type-name{
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .show-type-description{
+            padding: 0;
+          }
+        }
+      }
+      .reviews .reviews-grid .review-list .review-item{
+        padding: 20px 30px 30px 30px;
+        .review-body{
+          font-size: 13px;
+        }
+      }
+      .customers{
+        padding: 50px;
+        .customers-list .customer-item_empty{
+          display: none;
+        }
+      }
+      .feedback-bottom{
+        height: 200px;
+        .left-panel{
+          padding-left: 40px;
+          .feedback-text{
+            font-size: 30px;
+          }
+        }
+        .right-panel{
+          padding: 0 10px 0 30px;
+          .form-container .submit-btn button{
+            width: 60px;
+          }
+        }
+      }
+      footer .column{
+        padding-left: 50px;
+        .row .icon {
+          width: 35px;
+          height: 35px;
+        }
+        .row .text{
+          font-size: 25px;
+        }
+      }
+    }
+    h2{
+      font-size: 50px !important;
+    }
+  }
+  .show-type-wrapper{
+    padding: 0 18px;
+  }
+  .reviews{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .left-panel{
+    margin-left: 15px;
+  }
+  .right-panel{
+    margin-right: 15px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media (min-width: 320px) and (max-width: 767px) {
+  body{
+    background-size: 1440px 700px !important;
+    .primary-button{
+      font-size: 16px !important;
+      width: 217px !important;
+      height: 50px !important;
+    }
+    .container{
+      .desktop-nav{
+        display: none;
+      }
+      .mobile-nav{
+        display: block;
+      }
+      header{
+        h1{
+          padding-left: 30px;
+          font-size: 45px;
+          margin: 70px 0 100px 0;
+          .sub-tittle{
+            font-size: 20px;
+            margin-top: 10px;
+          }
+        }
+        .feedback-top{
+          height: max-content;
+          display: flex;
+          flex-direction: column;
+          .left-panel{
+            height: 150px;
+            margin: 0 5px;
+            padding-left: 30px;
+            .feedback-text{
+              font-size: 25px;
+            }
+          }
+          .right-panel{
+            height: 150px;
+            margin: 0 5px;
+            padding: 0 10px 0 20px;
+            .form-container {
+              .submit-btn button{
+                width: 50px;
+              }
+              .input-phone{
+                font-size: 20px;
+              }
+            }
+
+          }
+          .middle-panel{
+            height: 20px;
+          }
+        }
+      }
+
+      .varieties .varieties-list .varieties-item .text{
+        font-size: 17px;
+      }
+      .show-type {
+        .slider .slider-item {
+          height: 250px;
+        }
+        .show-type-content {
+          padding: 30px 10px 20px 50px;
+          .show-type-name{
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .show-type-description{
+            padding: 0;
+          }
+        }
+      }
+      .reviews {
+        padding-left: 30px;
+        padding-right: 30px;
+        .reviews-grid {
+          display: block;
+          .review-list .review-item{
+            padding: 10px 20px 20px 20px;
+            margin-bottom: 30px;
+            .review-body{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .customers{
+        padding: 50px;
+        .customers-list .customer-item_empty{
+          display: none;
+        }
+      }
+      .feedback-bottom{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        .left-panel{
+          height: 150px;
+          margin: 0 5px;
+          padding-left: 30px;
+          .feedback-text{
+            font-size: 25px;
+          }
+        }
+        .right-panel{
+          height: 150px;
+          margin: 0 5px;
+          padding: 0 10px 0 20px;
+          .form-container {
+            .submit-btn button{
+              width: 50px;
+            }
+            .input-phone{
+              font-size: 20px;
+            }
+          }
+
+        }
+        .middle-panel{
+          height: 20px;
+        }
+      }
+      footer{
+        flex-direction: column;
+        padding: 0;
+        .column{
+          width: 100%;
+          padding-left: 30px;
+          .row .icon {
+            width: 30px;
+            height: 30px;
+          }
+          .row .text{
+            font-size: 20px;
+            .sub-text{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+    }
+    h2{
+      font-size: 30px !important;
+    }
+  }
+  .show-type-wrapper{
+    padding: 0 18px;
+  }
+  .reviews{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
