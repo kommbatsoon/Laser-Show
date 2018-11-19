@@ -148,18 +148,15 @@
 @media (min-width: 320px) and (max-width: 767px) {
   body{
     background-size: 1440px 700px !important;
+    h2{
+      font-size: 30px !important;
+    }
     .primary-button{
       font-size: 16px !important;
       width: 217px !important;
       height: 50px !important;
     }
     .container{
-      .desktop-nav{
-        display: none;
-      }
-      .mobile-nav{
-        display: block;
-      }
       header{
         h1{
           padding-left: 30px;
@@ -169,6 +166,12 @@
             font-size: 20px;
             margin-top: 10px;
           }
+        }
+        .desktop-nav{
+          display: none;
+        }
+        .mobile-nav{
+          display: block;
         }
         .feedback-top{
           height: max-content;
@@ -187,11 +190,15 @@
             margin: 0 5px;
             padding: 0 10px 0 20px;
             .form-container {
+              width: 100%;
+              .input-container{
+                flex: 1;
+                .input-phone{
+                  font-size: 20px;
+                }
+              }
               .submit-btn button{
                 width: 50px;
-              }
-              .input-phone{
-                font-size: 20px;
               }
             }
 
@@ -201,9 +208,45 @@
           }
         }
       }
-
-      .varieties .varieties-list .varieties-item .text{
-        font-size: 17px;
+      .achievements{
+        padding: 70px 15px 0 15px;
+        .winner-container{
+          .winner-content{
+            margin: 0 30px;
+            .icon{
+              width: 55px;
+              height: 50px;
+            }
+            .title{
+              font-size: 25px;
+            }
+            .sub-title{
+              text-align: center;
+            }
+          }
+        }
+        .statistic-container{
+          .statistic-column{
+            flex-direction: column;
+            margin: 70px 0 30px 0;
+            .statistic-content{
+              text-align: center;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .varieties {
+        .varieties-list {
+          flex-wrap: wrap;
+          .varieties-item {
+            width: 50%;
+            height: 150px;
+            .text{
+              font-size: 17px;
+            }
+          }
+        }
       }
       .show-type {
         .slider .slider-item {
@@ -292,9 +335,7 @@
       }
 
     }
-    h2{
-      font-size: 30px !important;
-    }
+
   }
   .show-type-wrapper{
     padding: 0 18px;
