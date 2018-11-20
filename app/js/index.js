@@ -72,7 +72,13 @@
     let reviewsAllCount = REVIEWS_DATA.length;
 
     let VISIBLE_REVIEWS_COUNT = 4; //Number of Reviews On Page (default)
-    const REVIEWS_INCREMENT   = 4; //Number of Reviews that will be Showed after 'Read more' click
+    let REVIEWS_INCREMENT   = 4; //Number of Reviews that will be Showed after 'Read more' click
+
+    let windowWidth = window.innerWidth;
+    if(windowWidth < 768){
+        VISIBLE_REVIEWS_COUNT = 2;
+        REVIEWS_INCREMENT = 2;
+    }
 
     const REVIEWS_LIST_LEFT_COLUMN  = document.getElementById('review-list-left-column');
     const REVIEWS_LIST_RIGHT_COLUMN = document.getElementById('review-list-right-column');
@@ -214,8 +220,6 @@
             if(prevSrc.indexOf('autoplay=1') === -1){
                 prevSrc += '?autoplay=1';
                 LASER_GAME_VIDEO.setAttribute('src', prevSrc);
-                console.log('SET');
-                console.log(prevSrc);
             }
         }
     });
@@ -285,5 +289,11 @@
         infinite: true,
         arrows:true,
         slidesToShow: 5
+    });
+    $('.customers-slider').slick({
+        infinite: true,
+        arrows:true,
+        slidesToShow: 1,
+        adaptiveHeight: true
     });
 })();

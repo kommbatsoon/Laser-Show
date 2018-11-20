@@ -161,9 +161,9 @@
         h1{
           padding-left: 30px;
           font-size: 45px;
-          margin: 70px 0 100px 0;
+          margin: 50px 0 70px 0;
           .sub-tittle{
-            font-size: 20px;
+            font-size: 25px;
             margin-top: 10px;
           }
         }
@@ -228,15 +228,23 @@
         .statistic-container{
           .statistic-column{
             flex-direction: column;
-            margin: 70px 0 30px 0;
+            margin: 70px 0 70px 0;
+            .icon{
+              width: 50px;
+              height: 50px;
+            }
             .statistic-content{
               text-align: center;
               margin: 0;
+              .title{
+                font-size: 25px;
+              }
             }
           }
         }
       }
       .varieties {
+        display: none;
         .varieties-list {
           flex-wrap: wrap;
           .varieties-item {
@@ -249,6 +257,9 @@
         }
       }
       .show-type {
+        .video-item{
+          height: 250px;
+        }
         .slider .slider-item {
           height: 250px;
         }
@@ -266,6 +277,9 @@
         }
       }
       .reviews {
+        h2{
+          padding: 0 20px;
+        }
         padding-left: 30px;
         padding-right: 30px;
         .reviews-grid {
@@ -280,12 +294,25 @@
         }
       }
       .customers{
-        padding: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
+        h2{
+          padding: 0 50px;
+          margin: 0 0 30px 0;
+        }
+        //padding: 40px;
+        .customers-list{
+          display: none;
+        }
         .customers-list .customer-item_empty{
           display: none;
         }
+        .customers-slider{
+          display: block;
+        }
       }
       .feedback-bottom{
+        padding: 50px 0;
         height: max-content;
         display: flex;
         flex-direction: column;
@@ -302,11 +329,15 @@
           margin: 0 5px;
           padding: 0 10px 0 20px;
           .form-container {
+            width: 100%;
+            .input-container{
+              flex: 1;
+              .input-phone{
+                font-size: 20px;
+              }
+            }
             .submit-btn button{
               width: 50px;
-            }
-            .input-phone{
-              font-size: 20px;
             }
           }
 
@@ -316,6 +347,7 @@
         }
       }
       footer{
+        display: none;
         flex-direction: column;
         padding: 0;
         .column{
@@ -333,9 +365,16 @@
           }
         }
       }
-
+      .mobile-footer-wrapper{
+        display: block;
+      }
+      .show-type-content{
+        display: none !important;
+      }
+      .show-type-content-mobile{
+        display: block !important;
+      }
     }
-
   }
   .show-type-wrapper{
     padding: 0 18px;
