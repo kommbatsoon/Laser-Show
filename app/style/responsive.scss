@@ -1,4 +1,10 @@
 
+@media (min-width: 1900px) and (max-width: 3999px) { body{background-size: 100% 1080px !important;} }
+@media (min-width: 1800px) and (max-width: 1899px) { body{background-size: 1900px 1030px !important;} }
+@media (min-width: 1700px) and (max-width: 1799px) { body{background-size: 1800px 970px !important;} }
+@media (min-width: 1600px) and (max-width: 1699px) { body{background-size: 1700px 920px !important;} }
+@media (min-width: 1500px) and (max-width: 1599px) { body{background-size: 1600px 870px !important;} }
+
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
   .container {
@@ -147,7 +153,7 @@
 /* Extra Small Devices, Phones */
 @media (min-width: 320px) and (max-width: 767px) {
   body{
-    background-size: 1440px 700px !important;
+    background-size: 899px 550px !important;
     h2{
       font-size: 30px !important;
     }
@@ -274,6 +280,8 @@
           .show-type-description{
             padding: 0;
           }
+        }
+        .photo-gallery .gallery-item{
         }
       }
       .reviews {
