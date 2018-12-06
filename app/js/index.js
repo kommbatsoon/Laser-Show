@@ -1,4 +1,6 @@
 (function () {
+    window.scrollTo(0, 0);
+
     //Popup init
     $('.popup_c').magnificPopup();
     //Popup gallery init

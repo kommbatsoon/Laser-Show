@@ -179,22 +179,40 @@ body {
       text-align: right;
       margin: 30px 30px 0 0;
       .nav-item {
-        font: normal normal normal 15px/normal AvertaCY-Regular;
+        font: normal normal normal 16px/normal AvertaCY-Regular;
         color: $white-color;
         display: inline-block;
-        margin-right: 30px;
+        margin-right: 15px;
         cursor: pointer;
+        &_icon{
+          margin-right: 7px;
+        }
+        &_first{
+          margin-left: 15px;
+        }
         a{
           color: $white-color;
         }
-        .icon-phone {
+        .icon{
           display: inline-block;
-          width: 12px;
-          height: 12px;
-          background: url("../img/icons/phone-icon.svg") no-repeat;
-          background-size: 100%;
-          margin-right: 7px;
-
+          width: 17px;
+          height: 17px;
+          opacity: .9;
+          &:hover{
+            opacity: 1;
+          }
+          &_phone{
+            background: url("../img/icons/phone-icon.svg") no-repeat;
+            background-size: 100%;
+          }
+          &_inst{
+            background: url("../img/icons/inst-icon.svg") no-repeat;
+            background-size: 100%;
+          }
+          &_vk{
+            background: url("../img/icons/vk-logo.svg") no-repeat;
+            background-size: 100%;
+          }
         }
         &:hover{
           text-shadow: 1px 1px rgba(255, 255, 255, 0.53);
@@ -420,6 +438,25 @@ body {
           font: normal normal 600 15px/normal AvertaCY-Regular;
           text-transform: uppercase;
           color: $input-title-color;
+          .icon {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            &_inst {
+              background: url("../img/icons/inst-icon-blueGray.svg") no-repeat;
+              background-size: 100%;
+            }
+            &_vk {
+              margin-left: 10px;
+              background: url("../img/icons/vk-logo-blueGray.svg") no-repeat;
+              background-size: 100%;
+            }
+            &_phone {
+              margin-left: 10px;
+              background: url("../img/icons/phone-icon-blueGray.svg") no-repeat;
+              background-size: 100%;
+            }
+          }
         }
         &_second{
           padding: 0;
@@ -451,6 +488,25 @@ body {
           font: normal normal 600 15px/normal AvertaCY-Regular;
           text-transform: uppercase;
           color: $input-title-color;
+        }
+        .icon {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          &_inst {
+            background: url("../img/icons/inst-icon-blueGray.svg") no-repeat;
+            background-size: 100%;
+          }
+          &_vk {
+            margin-left: 10px;
+            background: url("../img/icons/vk-logo-blueGray.svg") no-repeat;
+            background-size: 100%;
+          }
+          &_phone {
+            margin-left: 10px;
+            background: url("../img/icons/phone-icon-blueGray.svg") no-repeat;
+            background-size: 100%;
+          }
         }
       }
       .button-wrapper{
@@ -756,10 +812,6 @@ body {
       height: 30px;;
       &_vk {
         background: url("../img/icons/vk-logo.svg") no-repeat;
-        background-size: 100%;
-      }
-      &_phone {
-        background: url("../img/icons/phone-icon.svg") no-repeat;
         background-size: 100%;
       }
       &_inst {
