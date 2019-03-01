@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" src="https://mc.yandex.ru/metrika/tag.js."></script>
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document,'script','//mc.yandex.ru/metrika/tag.js', 'ym');
+    </script>
     <script type="text/javascript" >
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
@@ -40,6 +46,27 @@
             } else { f(); }
         })(document, window, "yandex_metrika_callbacks2");
     </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '497824984042271');
+        fbq('track', 'Lead');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=497824984042271&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
     <noscript><div><img src="https://mc.yandex.ru/watch/51242017" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 </head>
@@ -67,7 +94,7 @@
             </nav>
             <nav class="mobile-nav">
                 <ul>
-                    <li class="nav-item" onclick="yaCounter43338493.reachGoal('phone-number-top');">
+                    <li class="nav-item" onclick="ym(51242017, 'reachGoal', 'phone-number-top'); return true;">
                         <a class="icon-phone" href="tel:+375(33)3105155"></a>
                         <a class="phoneText" href="tel:+375(33)3105155">+375 33 310 51 55</a>
                     </li>
@@ -75,7 +102,8 @@
             </nav>
             <h1>
                 Лазерное <br>шоу <br>
-                <span class="sub-tittle">от Евгения Филона</span>
+                <span class="sub-tittle"> по всей Беларуси </span>
+                <!--<span class="sub-tittle">От Евгения Филона</span>-->
             </h1>
             <div class="feedback-top">
                 <div class="left-panel">
@@ -83,7 +111,7 @@
                 </div>
                 <div class="middle-panel"></div>
                 <div class="right-panel">
-                    <form id="top-form" class="form-container" onsubmit="yaCounter43474738.reachGoal('top-send-form'); return true;">
+                    <form id="top-form" class="form-container" onsubmit="ym(51242017, 'reachGoal', 'top-send-form'); return true;">
                         <label class="input-container">
                             <span class="input-tittle">Ваш номер телефона</span>
                             <input id="input-phone-top"
@@ -95,7 +123,7 @@
                             />
                         </label>
                         <label class="submit-btn">
-                            <button id="submit-btn-top" onclick="yaCounter43337620.reachGoal('submit-btn-top');" type="submit" disabled></button>
+                            <button id="submit-btn-top" onclick="ym(51242017, 'reachGoal', 'submit-btn-top'); return true;" type="submit" disabled></button>
                         </label>
                     </form>
                 </div>
@@ -167,10 +195,15 @@
             </div>
             <div class="slider slider-1 photo-gallery">
                 <a href="img/slider1/slide1.jpg" class="gallery-item"><img src="img/slider1/slide1.jpg"></a>
+                <a href="img/slider1/slide12.jpg" class="gallery-item"><img src="img/slider1/slide12.jpg"></a>
                 <a href="img/slider1/slide2.jpg" class="gallery-item"><img src="img/slider1/slide2.jpg"></a>
+                <a href="img/slider1/slide13.jpg" class="gallery-item"><img src="img/slider1/slide13.jpg"></a>
                 <a href="img/slider1/slide3.jpg" class="gallery-item"><img src="img/slider1/slide3.jpg"></a>
+                <a href="img/slider1/slide14.jpg" class="gallery-item"><img src="img/slider1/slide14.jpg"></a>
                 <a href="img/slider1/slide4.jpg" class="gallery-item"><img src="img/slider1/slide4.jpg"></a>
+                <a href="img/slider1/slide15.jpg" class="gallery-item"><img src="img/slider1/slide15.jpg"></a>
                 <a href="img/slider1/slide5.jpg" class="gallery-item"><img src="img/slider1/slide5.jpg"></a>
+                <a href="img/slider1/slide16.jpg" class="gallery-item"><img src="img/slider1/slide16.jpg"></a>
                 <a href="img/slider1/slide6.jpg" class="gallery-item"><img src="img/slider1/slide6.jpg"></a>
                 <a href="img/slider1/slide7.jpg" class="gallery-item"><img src="img/slider1/slide7.jpg"></a>
                 <a href="img/slider1/slide8.jpg" class="gallery-item"><img src="img/slider1/slide8.jpg"></a>
@@ -198,9 +231,9 @@
                             <div>
                                 <a class="icon icon_inst" href="https://www.instagram.com/filyounger/?hl=ru" target="_blank"></a>
                                 <a class="icon icon_vk" href="https://vk.com/fil_younger" target="_blank"></a>
-                                <a class="icon icon_phone" href="tel:+375(33)3105155" onclick="yaCounter43338541.reachGoal('phone-number-bottom');"></a>
+                                <a class="icon icon_phone" href="tel:+375(33)3105155" onclick="ym(51242017, 'reachGoal', 'phone-number-bottom'); return true;"></a>
                             </div>
-                            <span>Стоимость шоу: $150</span>
+                            <span>Стоимость шоу: <a href="#hidden_form" class="popup_c hook-link">Узнать</a></span>
                         </div>
                     </div>
                 </div>
@@ -221,7 +254,7 @@
                                 <a class="icon icon_inst" href="https://www.instagram.com/filyounger/?hl=ru" target="_blank"></a>
                                 <a class="icon icon_vk" href="https://vk.com/fil_younger" target="_blank"></a>
                             </div>
-                            <span>Стоимость шоу: $150</span>
+                            <span>Стоимость шоу: <a href="#hidden_form" class="popup_c hook-link">Узнать</a></span>
                         </div>
                     </div>
                     <div class="button-wrapper">
@@ -265,9 +298,9 @@
                             <div>
                                 <a class="icon icon_inst" href="https://www.instagram.com/filyounger/?hl=ru" target="_blank"></a>
                                 <a class="icon icon_vk" href="https://vk.com/fil_younger" target="_blank"></a>
-                                <a class="icon icon_phone" href="tel:+375(33)3105155" onclick="yaCounter43338541.reachGoal('phone-number-bottom');"></a>
+                                <a class="icon icon_phone" href="tel:+375(33)3105155" onclick="ym(51242017, 'reachGoal', 'phone-number-bottom'); return true;"></a>
                             </div>
-                            <span>Стоимость шоу: $350</span>
+                            <span>Стоимость шоу: <a href="#hidden_form" class="popup_c hook-link">Узнать</a></span>
                         </div>
                     </div>
                     <div class="show-type-name show-type-name_second">
@@ -293,7 +326,7 @@
                                 <a class="icon icon_inst" href="https://www.instagram.com/filyounger/?hl=ru" target="_blank"></a>
                                 <a class="icon icon_vk" href="https://vk.com/fil_younger" target="_blank"></a>
                             </div>
-                            <span>Стоимость шоу: $350</span>
+                            <span>Стоимость шоу: <a href="#hidden_form" class="popup_c hook-link">Узнать</a></span>
                         </div>
                     </div>
                     <div class="button-wrapper">
@@ -350,7 +383,17 @@
                         <img src="img/logos/mw-logo.png">
                     </a>
                 </li>
-                <li class="customer-item customer-item_empty"></li>
+                <li class="customer-item customer-item_bt">
+                    <a href="https://zov.by/" target="_blank">
+                        <img src="img/logos/zov-logo.png">
+                    </a>
+                </li>
+                <li class="customer-item customer-item_bs">
+                    <a href="http://www.business-info.by/" target="_blank">
+                        <img src="img/logos/bs-info-logo.png">
+                    </a>
+                </li>
+                <!--<li class="customer-item customer-item_empty"></li>-->
             </ul>
             <div class="customers-slider">
                 <div class="customer-item customer-item_conte">
@@ -370,6 +413,10 @@
                 <div class="customer-item customer-item_ga">
                 </div>
                 <div class="customer-item customer-item_mw">
+                </div>
+                <div class="customer-item customer-item_zov">
+                </div>
+                <div class="customer-item customer-item_bs-info">
                 </div>
             </div>
             <a id="become-customer-button" href="#hidden_form" class="secondary-button popup_c">Стать клиентом</a>
@@ -395,7 +442,7 @@
             </div>
             <div class="middle-panel"></div>
             <div class="right-panel">
-                <form id="bottom-form" class="form-container" onsubmit="yaCounter43474789.reachGoal('bottom-send-form'); return true;">
+                <form id="bottom-form" class="form-container" onsubmit="ym(51242017, 'reachGoal', 'bottom-send-form'); return true;">
                     <label class="input-container">
                         <span class="input-tittle">Ваш номер телефона</span>
                         <input id="input-phone-bottom"
@@ -406,7 +453,7 @@
                         />
                     </label>
                     <label class="submit-btn">
-                        <button id="submit-btn-bottom" onclick="yaCounter43337602.reachGoal('submit-btn-bottom');" type="submit" disabled></button>
+                        <button id="submit-btn-bottom" onclick="ym(51242017, 'reachGoal', 'submit-btn-bottom'); return true;" type="submit" disabled></button>
                     </label>
                 </form>
             </div>
@@ -415,7 +462,7 @@
             <div class="mobile-footer">
                 <a class="icon icon_vk" href="https://vk.com/fil_younger" target="_blank"></a>
                 <a class="icon icon_inst" href="https://www.instagram.com/filyounger/?hl=ru" target="_blank"></a>
-                <a class="icon icon_phone" href="tel:+375(33)3105155" onclick="yaCounter43338541.reachGoal('phone-number-bottom');"></a>
+                <a class="icon icon_phone" href="tel:+375(33)3105155" onclick="ym(51242017, 'reachGoal', 'phone-number-bottom'); return true;"></a>
                 <a class="icon icon_email" href="mailto:evgenii_filon@mail.ru"></a>
             </div>
         </div>
@@ -458,10 +505,11 @@
                 </div>
             </div>
         </footer>
+        <div class="conf_policy"><a href="policy.html">Политика конфиденциальности</a></div>
     </div>
 
     <div class="hidden">
-        <form id="hidden_form" class="popup" onsubmit="yaCounter43474756.reachGoal('popup-send-form'); return true;">
+        <form id="hidden_form" class="popup" onsubmit="ym(51242017, 'reachGoal', 'popup-send-form'); return true;">
             <div class="title">Мы вам перезвоним</div>
             <input type="text"
                    name="name"
@@ -475,7 +523,7 @@
                    value="+375"
                    id="input-phone-popup"
             />
-            <button id="submit-btn-popup" onclick="yaCounter43336825.reachGoal('submit-btn-popup'); return true;" type="submit" disabled>
+            <button id="submit-btn-popup" onclick="ym(51242017, 'reachGoal', 'submit-btn-popup'); return true;" type="submit" disabled>
                 Отправить
             </button>
         </form>

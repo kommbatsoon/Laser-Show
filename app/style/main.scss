@@ -21,9 +21,13 @@ body {
     text-shadow: $title-shadow;
     color: $white-color;
     margin: 100px 0 154px 0;
+    .title-sup {
+      font: normal normal normal 35px/normal AvertaCY-Regular;
+      color: $white-color;
+    }
     .sub-tittle {
       display: block;
-      font: normal normal normal 35px/normal AvertaCY-Regular;
+      font: normal normal normal 40px/normal AvertaCY-Regular;
       color: $white-color;
       margin-top: 30px;
     }
@@ -128,7 +132,7 @@ body {
         align-items: center;
         .input-tittle {
           flex: 1;
-          font: normal normal normal 15px/normal AvertaCY-Regular;
+          font: normal normal normal 18px/normal AvertaCY-Regular;
           color: $input-title-color;
           display: block;
         }
@@ -179,7 +183,7 @@ body {
       text-align: right;
       margin: 30px 30px 0 0;
       .nav-item {
-        font: normal normal normal 16px/normal AvertaCY-Regular;
+        font: normal normal normal 18px/normal AvertaCY-Regular;
         color: $white-color;
         display: inline-block;
         margin-right: 15px;
@@ -252,7 +256,7 @@ body {
             margin-top: 12px;
           }
           .sub-title{
-            font: normal normal normal 15px/normal AvertaCY-Regular;
+            font: normal normal normal 20px/normal AvertaCY-Regular;
             color: $input-title-color;
             margin-top: 5px;
           }
@@ -279,7 +283,7 @@ body {
           margin-top: 12px;
         }
         .sub-title{
-          font: normal normal normal 15px/normal AvertaCY-Regular;
+          font: normal normal normal 20px/normal AvertaCY-Regular;
           color: $input-title-color;
           margin-top: 5px;
         }
@@ -428,7 +432,7 @@ body {
         padding: 0 0 25px 25px;
         .description-body{
           padding: 0 25px 0 0;
-          font: normal normal normal 15px/normal AvertaCY-Regular;
+          font: normal normal normal 18px/normal AvertaCY-Regular;
           color: $white-color;
         }
         .description-footer{
@@ -462,6 +466,24 @@ body {
           padding: 0;
         }
       }
+    }
+
+    .hook-link {
+      margin-left: 3px;
+      font-size: 14px;
+      text-transform: none;
+      text-decoration: underline;
+      color: $btn-background-color;
+      text-shadow: 0 -1px rgba(0,0,0,.1);
+      -webkit-animation: pulsate 1s linear infinite;
+      animation: pulsate 1s linear infinite;
+    }
+
+    @-webkit-keyframes pulsate {
+      50% { color: #1CD585; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 3px #1CD585, 0 0 5px #1CD585; }
+    }
+    @keyframes pulsate {
+      50% { color: #1CD585; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 3px #1CD585, 0 0 5px #1CD585; }
     }
 
     .show-type-content-mobile{
@@ -604,6 +626,10 @@ body {
           width: 179px;
           height: 85px;
         }
+        &_bs{
+          width: 200px;
+          height: 65px;
+        }
       }
     }
     .customers-slider {
@@ -657,6 +683,14 @@ body {
         &_mw {
           background: transparent url("../img/logos/mw-logo.png") no-repeat center;
           background-size: 160px;
+        }
+        &_zov {
+          background: transparent url("../img/logos/zov-logo.png") no-repeat center;
+          background-size: 170px;
+        }
+        &_bs-info {
+          background: transparent url("../img/logos/bs-info-logo.png") no-repeat center;
+          background-size: 170px;
         }
       }
       .slick-arrow {
@@ -823,6 +857,16 @@ body {
         background-size: 100%;
         height: 20px;
       }
+    }
+  }
+
+  .conf_policy{
+    margin-bottom: 15px;
+    text-align: center;
+    a{
+      color: #f3f3f3;
+      font: normal normal normal 12px/normal AvertaCY-Regular;
+      text-decoration: underline;
     }
   }
 }
